@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes using grid</title>
+</head>
+<style>
+    .parent{
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        grid-template-rows: 50px 200px 50px;
+        row-gap: 10px;
+        column-gap: 30px;
+        background-color: red;
+        width: 300px;
+
+    }
+    #a{
+        grid-column-start: 1; 
+        grid-column-end: 4;
+        background-color: black;
+    }
+    #b{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: black;
+    
+    }
+    #c{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: black;
+    
+    }
+    #e{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: black;
+    
+    }
+    #d{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+    }
+    .parent2{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 55px 150px 55px;
+        grid-template-rows:50px 200px 50px;
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 300px;
+
+    }
+    #aa{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+    }
+    #bb{
+        grid-row-start: 2;
+        grid-row-end:3;
+        background-color: black;
+    }
+    #cc{
+        grid-row-start:2;
+        grid-row-end: 3;
+        background-color: black;
+    }
+    #dd{
+        grid-row-start:2;
+        grid-row-end: 3;
+        background-color: black;
+    }
+    #ee{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: black;
+    }
+    .parent3{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 50px 200px 50px;
+        row-gap: 20px;
+        width: 300px;
+    }
+    #x{
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #y{
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #z{
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+    }
+    .parent4{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 100px 180px;
+        grid-template-rows: 300px;
+        column-gap: 20px;
+        width: 300px;
+    }
+    #xx{
+        background-color: black;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #yy{
+        background-color: black;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+
+
+</style>
+<body>
+    <h1>using tables</h1>
+    <div class="parent">
+        <div id="a">a</div>
+        <div id="b">b</div>
+        <div id="c">c</div>
+        <div id="d">d</div>
+        <div id="e">e</div>
+    </div>
+<br>
+    <div class="parent2">
+        <div id="aa">a</div>
+        <div id="bb">b</div>
+        <div id="cc">c</div>
+        <div id="dd">d</div>
+        <div id="ee">e</div>
+    </div>
+    <br>
+    <div class="parent3">
+        <div id="x">a</div>
+        <div id="y">b</div>
+        <div id="z">c</div>
+    </div>
+    <br>
+    <div class="parent4">
+        <div id="xx">aa</div>
+        <div id="yy">bb</div>
+    </div>
+</body>
+</html>
