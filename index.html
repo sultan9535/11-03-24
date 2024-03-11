@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .main{
+        display: grid;
+        grid-template-columns: 100px 100px 200px 200px;
+        grid-template-rows: 100px 100px 100px;
+        column-gap: 10px;
+        row-gap: 10px;
+        width:420px;
+        margin-left: 400px;
+        margin-top: 100px;
+    }
+    #a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-image: url(./images/pic.JPG);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    #b{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-image: url(./images/iron-man.jpg);
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
+    #c{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-image: url(./images/hulk.jpg);
+        background-size: cover;
+        height: 200px 100px;
+    }
+    #d{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url(./images/thor.jpeg);
+        background-size: cover;
+        height: 100px;
+        width: 210px;
+
+    }
+    #e{
+        grid-column-start:1 ;
+        grid-column-end:3;
+        background-image: url(./images/flash.jpeg);
+        background-size: cover;
+        height: 100px;
+        width: 210px;
+
+    }
+    #f{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-image: url(./images/strange.jpeg);
+        background-size: cover;
+        height: 100px;
+        width: 200px;
+    }
+h1{
+    text-align: center;
+}
+</style>
+<body>
+    <h1>USING GRID</h1>
+    <div class="main">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+        <div id="e"></div>
+        <div id="f"></div>
+    </div>
+</body>
+</html>
