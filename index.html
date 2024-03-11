@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes inline</title>
+</head>
+<style>
+    .main{
+        margin-top: 0px;
+    }
+    .frame2{
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .frame1{
+    display: inline-block;
+    }
+    .frame3{
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 40px;
+    }
+    .frame4{
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    
+    #box1{
+        padding: 20px 125px;
+        background-color: black;
+        display: inline-block;
+        
+    }
+    .second{
+        margin-top: 10px;
+    }
+   
+    #box2{
+        padding: 100px 40px 100px 40px;
+        background-color: red;
+        display: inline-block;
+    }
+    #box3{
+        padding: 100px 40px 100px 40px;
+        background-color: green;
+        display: inline-block;
+    }
+    #box4{
+        padding: 100px 40px 100px 40px;
+        background-color: blue;
+        display: inline-block;
+    }
+    #box5{
+        padding: 20px 125px;
+        background-color: black;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    #block1{
+        display: inline-block;
+        padding: 10px 230px 20px 40px;
+        background-color: black;
+    }
+    #block2{
+        display: inline-block;
+        padding: 100px 20px 100px 20px ;
+        background-color: red;
+    }
+    #block3{
+        display: inline-block;
+        padding: 100px 90px;
+        background-color: green;
+    }
+    #block4{
+        display: inline-block;
+        padding: 100px 20px 100px 20px;
+        background-color: blue;
+    }
+    #block5{
+        display: inline-block;
+        padding: 20px 230px 20px 40px;
+        margin-top: 10px;
+        background-color: black;
+    }
+    .section2{
+        margin-top: 20px;
+    }
+
+    #brick1{
+        padding: 20px 100px;
+        background-color: red;
+        margin-top: 0px;
+        
+    }
+    #brick2{
+        padding: 100px 20px;
+        background-color: green;
+        margin-top: 10px;
+    }
+    #brick3{
+        
+        padding: 20px 100px;
+        background-color: blue;
+        margin-top: 10px;
+    }
+    #square1{
+        display: inline-block;
+        padding: 150px 20px;
+        background-color: red;
+    }
+    #square2{
+        display: inline-block;
+        padding: 150px 100px;
+        background-color: green;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>using inline block</h1>
+    <div class="main">
+    <div class="frame1">
+        <div id="box1"></div>
+         <div class="second">
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+        <div id="box5"></div>
+    </div>
+    <div class="frame2">
+        <div id="block1"></div>
+        <div class="section2">
+           <div id="block2"></div>
+           <div id="block3"></div>
+           <div id="block4"></div>
+        </div>
+        <div id="block5"></div>
+    </div>
+    <div class="frame3">
+    <div id="brick1"></div>
+    <div id="third">
+    <div id="brick2"></div>
+    </div>
+    <div id="brick3"></div>
+    </div>
+    <div class="frame4">
+        <div id="square1"></div>
+        <div id="square2"></div>
+    </div>
+
+    </div>
+</body>
+</html>
